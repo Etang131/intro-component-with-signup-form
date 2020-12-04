@@ -1,3 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("/images/bg-intro-mobile.png");
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 6.4%;
+}
+
+h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-top: 8vh;
+  text-align: center;
+}
+
+.mainText {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.addBlock {
+  background: #5e54a4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  margin-top: 5vh;
+}
+
+.addBlock > p {
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
