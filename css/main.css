@@ -44,6 +44,33 @@ h1 {
   text-align: center;
 }
 
+form {
+  background: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 15px 0 0 30px;
+  margin-top: 4vh;
+}
+
+form input {
+  padding: 26px 0;
+  margin: 10px auto;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 90%;
+}
+
+form input::placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  mix-blend-mode: normal;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
