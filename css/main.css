@@ -38,6 +38,10 @@ h1 {
   margin-top: 5vh;
 }
 
+.addBlock span {
+  font-weight: bold;
+}
+
 .addBlock > p {
   color: #ffffff;
   padding: 10px 0;
@@ -48,13 +52,13 @@ form {
   background: #ffffff;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
   border-radius: 10px;
-  padding: 15px 0 0 30px;
-  margin-top: 4vh;
+  padding: 15px 0 25px 0;
+  margin-top: 3vh;
 }
 
 form input {
   padding: 26px 0;
-  margin: 10px auto;
+  margin: 10px 5%;
   border: 1px solid #dedede;
   box-sizing: border-box;
   border-radius: 5px;
@@ -69,6 +73,38 @@ form input::placeholder {
   letter-spacing: 0.25px;
   color: #3d3b48;
   mix-blend-mode: normal;
+}
+
+button {
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 10px 5%;
+  width: 90%;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.termsOfService {
+  margin-top: 1vh;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #bab7d4;
+}
+
+.termsOfService span a {
+  color: #ff7979;
+  text-decoration: none;
 }
 
 .attribution {
