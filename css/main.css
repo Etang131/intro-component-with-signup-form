@@ -4,12 +4,25 @@
 }
 
 body {
-  background-color: hsl(0, 100%, 74%);
-  background-image: url("/images/bg-intro-mobile.png");
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .container {
+  background-image: url("/images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  padding: 0 0 15vh 0;
+  height: 100%;
+}
+
+.heroSection,
+.formSection {
   margin: 0 6.4%;
 }
 
@@ -109,8 +122,50 @@ button {
 
 .attribution {
   font-size: 11px;
+  margin-top: 20px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-bottom: 25vh;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 11% 6% 0 0%;
+  }
+
+  h1,
+  .mainText {
+    text-align: left;
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    letter-spacing: -0.520833px;
+    line-height: 3.4375rem;
+  }
+
+  .mainText > br {
+    display: none;
+  }
+
+  .formSection {
+    margin: 12.1% 6% 0 0;
+  }
+
+  .attribution {
+    margin-top: 25vh;
+  }
 }
