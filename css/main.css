@@ -88,6 +88,13 @@ form input::placeholder {
   mix-blend-mode: normal;
 }
 
+.emptyInput {
+  background: url("/images/icon-error.svg");
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
 button {
   background: #38cc8b;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
@@ -103,6 +110,11 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
+}
+
+button:hover {
+  background: #77e2b3;
+  cursor: pointer;
 }
 
 .termsOfService {
