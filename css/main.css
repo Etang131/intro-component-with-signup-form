@@ -90,9 +90,51 @@ form input::placeholder {
 
 .emptyInput {
   background: url("/images/icon-error.svg");
+  /*
   height: 24px;
   width: 24px;
   display: inline-block;
+  */
+}
+
+.formBlock {
+  position: relative;
+}
+
+.formBlock input {
+  display: block;
+}
+
+.formBlock i {
+  background-image: url("/images/icon-error.svg");
+  position: absolute;
+  top: 25px;
+  right: 55px;
+  height: 24px;
+  width: 24px;
+  visibility: hidden;
+}
+
+.formBlock small {
+  color: #ff7979;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  margin-left: 65%;
+  visibility: hidden;
+}
+
+.formBlock.failure input {
+  border: 2px solid #ff7979;
+}
+
+.formBlock.failure i {
+  visibility: visible;
+}
+
+.formBlock.failure small {
+  visibility: visible;
 }
 
 button {
@@ -155,6 +197,10 @@ button:hover {
     align-items: flex-end;
     justify-content: center;
     margin: 11% 6% 0 0%;
+  }
+
+  .formSection {
+    width: 75%;
   }
 
   h1,
