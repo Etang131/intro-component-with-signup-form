@@ -78,6 +78,14 @@ form input {
   width: 90%;
 }
 
+form input[type="text"] {
+  padding-left: 5%;
+}
+
+form input[type="password"] {
+  padding-left: 5%;
+}
+
 form input::placeholder {
   font-style: normal;
   font-weight: 600;
@@ -88,27 +96,19 @@ form input::placeholder {
   mix-blend-mode: normal;
 }
 
-.emptyInput {
-  background: url("/images/icon-error.svg");
-  /*
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  */
-}
-
 .formBlock {
   position: relative;
 }
 
 .formBlock input {
   display: block;
+  height: 56px;
 }
 
 .formBlock i {
   background-image: url("/images/icon-error.svg");
   position: absolute;
-  top: 25px;
+  top: 18px;
   right: 55px;
   height: 24px;
   width: 24px;
@@ -121,7 +121,7 @@ form input::placeholder {
   font-weight: 500;
   font-size: 0.6875rem;
   line-height: 1rem;
-  margin-left: 65%;
+  margin-left: 45%;
   visibility: hidden;
 }
 
@@ -183,7 +183,13 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
+  .formBlock small {
+    margin-left: 70%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   .container {
     display: flex;
     justify-content: space-between;
@@ -196,11 +202,7 @@ button:hover {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin: 11% 6% 0 0%;
-  }
-
-  .formSection {
-    width: 75%;
+    margin: 8% 6% 0 0%;
   }
 
   h1,
@@ -220,7 +222,20 @@ button:hover {
   }
 
   .formSection {
-    margin: 12.1% 6% 0 0;
+    margin: 6.1% 6% 0 0;
+    width: 75%;
+  }
+
+  form {
+    padding: 4vh 1vw;
+  }
+
+  .formBlock small {
+    margin-left: 65%;
+  }
+
+  .termsOfService > br {
+    display: none;
   }
 
   .attribution {
