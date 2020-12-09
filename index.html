@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/main.css">
+  <script src="app.js" defer></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -23,19 +24,27 @@
    <div class="addBlock">
   <p><span>Try it free 7 days</span> then <br> $20/mo. thereafter</p>
 </div>
-<form action="">
-<input type="text" id="firstName" placeholder="   First Name"  required >
-<i class="emptyInput"></i>
-<small class="formError">First Name cannot be empty</small>
-<input type="text" id="lastName" placeholder="   Last Name" required>
-<i class="emptyInput"></i>
-<small class="formError">Last Name cannot be empty</small>
-<input type="email" id="email" placeholder="   Email Address" required>
-<i class="emptyInput"></i>
-<small class="formError">Looks like this is not an email</small>
-<input type="password" id="password" placeholder="   Password" required>
-<i class="emptyInput"></i>
-<small class="formError">Password cannot be empty</small>
+<form id="form">
+  <div class="formBlock">
+    <input type="text" id="firstName" placeholder="   First Name">
+    <i class="emptyInput"></i>
+    <small>First Name cannot be empty</small>
+  </div>
+  <div class="formBlock">
+    <input type="text" id="lastName" placeholder="   Last Name">
+    <i class="emptyInput"></i>
+    <small>Last Name cannot be empty</small>
+  </div>
+  <div class="formBlock">
+    <input type="email" id="email" placeholder="   Email Address" >
+    <i class="emptyInput"></i>
+    <small>Looks like this is not an email</small>
+  </div>
+  <div class="formBlock">
+    <input type="password" id="password" placeholder="   Password">
+    <i class="emptyInput"></i>
+    <small>Password cannot be empty</small>
+  </div>
 <button id="submit">Claim your free trial </button>
 <p class="termsOfService">By clicking the button, you are agreeing to <br> our <span class="terms"><a href='#'>Terms and Services</a></span></p>
 </form>
