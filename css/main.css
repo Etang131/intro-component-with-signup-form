@@ -79,6 +79,9 @@ form input {
 
 form input[type="text"] {
   padding-left: 5%;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
 }
 
 form input[type="password"] {
